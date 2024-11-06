@@ -1,1 +1,2 @@
 # dio-resumo-do-lab
+Durante o laboratório, aprendi sobre computação em nuvem, incluindo como criar uma conta na Microsoft Azure e usar os serviços disponíveis. Também entendi a diferença entre CapEx e OpEx: CapEx refere-se ao investimento inicial de uma empresa para adquirir e manter sua própria infraestrutura de TI, como servidores e data centers, enquanto OpEx trata dos custos operacionais contínuos, nos quais a empresa paga apenas pelos recursos que usa. Na nuvem pública, isso permite reduzir os custos iniciais e escalonar os serviços conforme necessário.
