@@ -1,12 +1,52 @@
-# dio-resumo-do-lab
-Durante o laboratório, aprendi sobre computação em nuvem, incluindo como criar uma conta na Microsoft Azure e usar os serviços disponíveis. Também entendi a diferença entre CapEx e OpEx: CapEx refere-se ao investimento inicial de uma empresa para adquirir e manter sua própria infraestrutura de TI, como servidores e data centers, enquanto OpEx trata dos custos operacionais contínuos, nos quais a empresa paga apenas pelos recursos que usa. Na nuvem pública, isso permite reduzir os custos iniciais e escalonar os serviços conforme necessário.
+# Resumo do Laboratório de Computação em Nuvem - DIO
 
-Na parte II do laboratório, vimos sobre os preços de alguns modelos de nuvem e suas qualidades, alguns que ficam inativos até por alguns dias durante o ano e outros que ficam apenas minutos. Vimos sobre as zonas de disponibilidade e sobre redundânia de armazenamento.
+No laboratório de computação em nuvem, foram explorados conceitos fundamentais e práticas com a plataforma **Microsoft Azure**, abrangendo desde a criação de contas até o uso de diversos serviços disponíveis. 
 
-LRS (Locally Redundant Storage) – Armazenamento Localmente Redundante: Replica os dados três vezes dentro de um único data center em uma única região. Protege contra falhas de hardware local, mas não contra desastres que afetem toda a região.
+### CapEx vs. OpEx
+Foram destacadas as diferenças entre **CapEx (Capital Expenditure)** e **OpEx (Operational Expenditure)**:
+- **CapEx** envolve o investimento inicial em infraestrutura própria, como servidores e data centers.
+- **OpEx** refere-se aos custos operacionais recorrentes, onde a empresa paga apenas pelos recursos que utiliza. A nuvem pública otimiza o OpEx ao reduzir custos iniciais e ao permitir a escalabilidade dos serviços conforme a demanda.
 
-ZRS (Zone-Redundant Storage) – Armazenamento com Redundância entre Zonas: Replica os dados em três zonas diferentes dentro da mesma região. Protege contra falhas em uma zona específica, garantindo alta disponibilidade na mesma região.
+---
 
-GRS (Geo-Redundant Storage) – Armazenamento com Redundância Geográfica: Replica os dados em uma região secundária distante. Protege contra desastres regionais, replicando dados de forma assíncrona em outra região para recuperação de desastres.
+### Parte II: Modelos de Disponibilidade e Redundância no Armazenamento
+Neste módulo, abordou-se a importância da alta disponibilidade e redundância no armazenamento em nuvem, destacando-se as opções de armazenamento na Azure:
 
-GZRS (Geo-Zone-Redundant Storage) – Armazenamento com Redundância Geo-Zonal: Combina ZRS e GRS, replicando dados em várias zonas de uma região primária e também em uma região secundária. Proporciona o mais alto nível de resiliência contra falhas de zona e de região.
+- **LRS (Locally Redundant Storage)** – Armazenamento Localmente Redundante:
+  - Replica dados três vezes dentro de um único data center em uma única região.
+  - Oferece proteção contra falhas de hardware locais, mas não contra desastres regionais.
+
+- **ZRS (Zone-Redundant Storage)** – Armazenamento com Redundância entre Zonas:
+  - Replica dados em três zonas diferentes dentro da mesma região.
+  - Protege contra falhas em zonas específicas, garantindo maior disponibilidade na região.
+
+- **GRS (Geo-Redundant Storage)** – Armazenamento com Redundância Geográfica:
+  - Replica dados em uma região secundária distante.
+  - Proporciona recuperação de desastres em caso de falhas regionais, com replicação assíncrona.
+
+- **GZRS (Geo-Zone-Redundant Storage)** – Armazenamento com Redundância Geo-Zonal:
+  - Combina ZRS e GRS, replicando dados em várias zonas na região primária e em uma secundária.
+  - Oferece o mais alto nível de resiliência contra falhas regionais e de zona.
+
+---
+
+### Modelos de Serviço em Nuvem: IaaS, PaaS e SaaS
+Três principais modelos de serviço em nuvem foram abordados: **IaaS (Infrastructure as a Service)**, **PaaS (Platform as a Service)** e **SaaS (Software as a Service)**, cada um oferecendo diferentes níveis de controle e abstração.
+
+- **IaaS (Infrastructure as a Service)**:
+  - Fornece infraestrutura básica de TI, incluindo servidores virtuais, armazenamento e redes.
+  - O cliente é responsável pelo gerenciamento do sistema operacional e aplicações.
+  - **Ideal para**: Empresas que buscam flexibilidade e controle sobre seu ambiente, substituindo a infraestrutura física e agilizando a escalabilidade.
+  - **Exemplo**: Máquinas virtuais no Azure para hospedar sistemas em ambientes personalizáveis.
+
+- **PaaS (Platform as a Service)**:
+  - O provedor gerencia a infraestrutura e o sistema operacional, oferecendo uma plataforma pronta para desenvolvimento, implantação e gestão de aplicativos.
+  - **Ideal para**: Desenvolvedores, pois o PaaS permite criar e testar código com acesso a bancos de dados e ferramentas sem configurar a infraestrutura.
+  - **Exemplo**: App Service do Azure, usado para criar e implantar aplicativos web sem a necessidade de gerenciar servidores.
+
+- **SaaS (Software as a Service)**:
+  - O provedor gerencia a infraestrutura, sistema operacional e software, fornecendo ao cliente acesso às aplicações pela internet.
+  - **Ideal para**: Soluções padronizadas com fácil acesso e baixo custo de implementação, onde a empresa utiliza ferramentas completas sem precisar de infraestrutura própria.
+  - **Exemplo**: Microsoft 365 e Salesforce, onde as empresas pagam por uma assinatura para acessar o software atualizado pelo provedor.
+
+Esses modelos fornecem soluções adaptadas para diferentes necessidades empresariais, oferecendo escalabilidade, controle e economia de custos para diversas situações de uso.
